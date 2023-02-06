@@ -1,22 +1,21 @@
 package com.tradehouse.lesson_6_4.ui
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import dagger.hilt.android.lifecycle.HiltViewModel
 
-class MainViewModel :ViewModel() {
+class MainViewModel : ViewModel() {
     var count = 0
     var data = MutableLiveData<Int>()
-    var data1= MutableLiveData<String>()
-    fun onIncrementInt(){
+    var data1 = MutableLiveData<String>()
+    fun onIncrementInt() {
         count++
-        data.value=count
-        data1.value="+"
+        data.value = count
+        data1.value = "+"
     }
-    fun onDecrement(){
+
+    fun onDecrement() {
         count--
-        data.value=count
-        data1.value="-"
+        data.value = count
+        data1.value = "-"
     }
 }

@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
-import com.tradehouse.lesson_6_4.R
 import com.tradehouse.lesson_6_4.databinding.FragmentHistoryBinding
 import com.tradehouse.lesson_6_4.ui.MainViewModel
 
@@ -18,7 +17,7 @@ class HistoryFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentHistoryBinding.inflate(inflater, container, false)
         return binding.root
 

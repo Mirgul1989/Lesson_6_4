@@ -1,13 +1,11 @@
 package com.tradehouse.lesson_6_4.fragment2
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.viewModels
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.tradehouse.lesson_6_4.R
 import com.tradehouse.lesson_6_4.databinding.FragmentCountBinding
 import com.tradehouse.lesson_6_4.ui.MainViewModel
 
@@ -18,7 +16,7 @@ class CountFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentCountBinding.inflate(inflater, container, false)
         return binding.root
     }
